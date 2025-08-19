@@ -1,0 +1,69 @@
+    <div class="intoro1">
+ <div class="container-sindan">
+<%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+           
+                
+
+                 <div class="intoro">
+           　　　　 <h5>「フィリピン観光マッチング診断〜ベストスポット教えます！」</h5>
+                <div class="Question1">
+                <div class="col-11">
+                    <div class="col-12">
+                        <p>Question1. どんな旅スタイルがいい？？</p>
+                    </div>
+                    <div class="col-6">
+                        <%= f.radio_button :question1, "1", id: "custom_id1" %>
+            　　　　<label for="custom_id1">のんびり旅</label>
+            　　　　     <%= f.radio_button :question1, "2", id: "custom_id2" %>
+                        <label for="custom_id2">アクティブ旅</label>
+                        </div>
+                </div>
+                </div>
+                <div class="col-11">
+                    <div class="col-12">
+                        <p>Question2. 移動距離は？？</p>
+                    </div>
+                    <div class="col-6">
+                        <%= f.radio_button :question2, "1", id: "custom_id3" %>
+           　　　      <label for="custom_id3">首都近郊で楽しみたい</label>
+                    <%= f.radio_button :question2, "2", id: "custom_id4" %>
+                      <label for="custom_id4">遠くまで行って非日常を楽しみたい</label>
+                      </div>
+                    </div>
+                    
+                 <div class="col-11">
+                    <div class="col-12">
+                        <p>Question3. フィリピンで何したい？</p>
+                    </div>
+                    <div class="col-6">
+                        <%= f.radio_button :question3, "1", id: "custom_id5" %>
+            <label for="custom_id5">ビーチやリゾート</label>
+            <%= f.radio_button :question3, "2", id: "custom_id6" %>
+            <label for="custom_id6">大自然を満喫したい</label>
+             <%= f.radio_button :question3, "3", id: "custom_id7" %>
+            <label for="custom_id7">文化や歴史を感じたい</label>
+            </div>
+                    </div>
+
+
+                <div class="col-11">
+                    <div class="col-12">
+                        <p>Question4. 誰と行く？</p>
+                    </div>
+                    <div class="col-6">
+            <%= f.radio_button :question4, "1", id: "custom_id8" %>
+            <label for="custom_id8">家族・パートナー</label>
+            <%= f.radio_button :question4, "2", id: "custom_id9" %>
+            <label for="custom_id9">友人</label>
+             <%= f.radio_button :question4, "3", id: "custom_id10" %>
+            <label for="custom_id10">一人旅</label>
+            </div>
+                    </div>
+                </div>
+        
+            <div class="sindanbotan">
+                <%= f.submit "post" %>
+            </div>
+<% end %>
+    </div>
+     </div>

@@ -1,0 +1,38 @@
+<h1>あなたのおすすめをシェアしよう！</h1>
+<h3>新規おすすめすぽっと</h3>
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :おすすめすぽっと！ %>
+    <%= f.text_field :title, :size => 30 %>
+  </div>
+  <div class="field">
+    <%= f.label :見どころ！ %>
+    <%= f.text_field :information, :size => 30 %>
+  </div>
+   
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  
+  <%= f.submit "投稿する" %>
+<% end %>
+
+
+<div class="tweets-container">
+  <% @tweets.each do |t| %>
+    <div class="tweet">
+    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+      <%= t.title %>
+      <%= t.information %>
+    </div>
+  <% end %>
+</div>
+<h3>投稿を検索</h3>
+ <%= form_tag({controller:"tweets",action:"index"}, method: :get) do %>
+   <%= text_field_tag :search %>
+   <%= submit_tag '検索する'  %>
+<% end %>
+
+
+ 

@@ -1,0 +1,14 @@
+  <h1>フィリピンに行こう！</h1>
+    <% if user_signed_in? %>
+     <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+    <% else %>
+     <%= link_to "新規登録", new_user_registration_path %>
+     <%= link_to "ログイン", new_user_session_path %>
+    <% end %>
+
+  <%= link_to "新規投稿へ", new_tweet_path %> <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+
+  <% if user_signed_in? %>
+  <%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>
+
