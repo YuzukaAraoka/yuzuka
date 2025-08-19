@@ -73,6 +73,7 @@ gem 'cloudinary','<2.0.0'
 gem 'dotenv-rails'
 gem 'ffi'
 gem 'sass-rails'
+# PostgreSQL → 本番用
 group :production do
   gem 'pg'
 end
