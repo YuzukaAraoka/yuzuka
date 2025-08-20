@@ -1,4 +1,12 @@
-  <h1>フィリピンに行こう！</h1>
+  <h1>フィリピン日和</h1>
+  /<h2 class="emphasis_design23">
+  <span>S</span>
+  <span>E</span>
+  <span>O</span>
+  <span>対</span>
+  <span>策</span>のバイブル
+</h2>
+
     <% if user_signed_in? %>
      <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
     <% else %>
@@ -7,10 +15,11 @@
     <% end %>
 
   <%= link_to "新規投稿へ", new_tweet_path %> <%= link_to "診断を始める", new_perfume_path, class: "link" %>
-<div class="button_solid011">
+
+  <div class="button_solid011">
   <a href="#">
-    <span>ボタンの補足</span>
-    ボタンのデザイン
+    <span>おすすめスポットを見つけよう！</span>
+    診断を始める
   </a>
 </div>
 

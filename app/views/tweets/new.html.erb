@@ -28,6 +28,8 @@
     </div>
   <% end %>
 </div>
+
+
 <h3>投稿を検索</h3>
  <%= form_tag({controller:"tweets",action:"index"}, method: :get) do %>
    <%= text_field_tag :search %>
