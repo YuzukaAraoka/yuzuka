@@ -7,8 +7,16 @@
     <% end %>
 
   <%= link_to "新規投稿へ", new_tweet_path %> <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+<div class="button_solid011">
+  <a href="#">
+    <span>ボタンの補足</span>
+    ボタンのデザイン
+  </a>
+</div>
 
   <% if user_signed_in? %>
   <%= link_to "マイページへ", user_path(current_user.id) %>
 <% end %>
+
+
 
