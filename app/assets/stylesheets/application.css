@@ -13,3 +13,71 @@
  *= require_tree .
  *= require_self
  */
+ * {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  position: relative; 
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  background-image: url(sea.jpg);
+  margin-bottom: 20px;
+}
+.header-list2 {
+  background-image: url(sea.jpg);
+  height: 170px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: white; 
+  text-decoration: none; 
+}
+header h1 {
+  color: yellow;
+  margin-left: 20px;
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+header h11 {
+  color: yellow;
+  margin-left: 20px;
+  font-size: 35px;
+  margin-top: 40px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 45px;
+}
+header ul {
+  display: flex;
+}
+.header-list3{
+  margin-left: 100px;
+}
+header li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.link{
+  margin-right: 40px;
+  margin-left: 10px;
+}
+p{margin-right: 20px;
+}
+
+
+

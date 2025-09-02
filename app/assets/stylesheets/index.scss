@@ -1,53 +1,80 @@
-/* solid011 */
-.button_solid011 a {
-    background: #6bb6ff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 240px;
-    padding: 20px 25px 10px;
-    color: #FFF;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
-    flex-direction: column;
-    border-radius: 8px;
-    border-bottom: solid 5px #1d7fde;
-}
-.button_solid011 a span {
-    background: #FFFF00;
-    width: 80%;
-    text-align: center;
-    position: absolute;
-    top: -15px;
-    filter: drop-shadow(0px 1px 2px #aaa);
-    padding: 3px 0;
-    font-size: 0.8rem;
-    color: #2b7fde;
-    border-radius: 5px;
-}
-.button_solid011 a span:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border: 5px solid transparent;
-    border-top: 5px solid #ffffff;
-}
-.button_solid011 a:hover {
-    border-bottom: solid 2px #1d7fde;
-    transform: translateY(3px);
+.slider {
+  width: 100%;           /* 画面幅いっぱい */
+  height: 350px;
+  background-color: #f0f0f0;
+  overflow: hidden;       /* 横スクロールを隠す */
+  position: relative;
 }
 
-/.emphasis_design23 span {
-  background-color: #4d9bc1;
-  color: #fff;
-  margin: 0 0.03em;
-  display: inline-block;
-  width: 1.7em;
-  height: 1.7em;
-  line-height: 1.7;
-  border-radius: 100vh;
+/* スライドトラック */
+.slider-track {
+  display: flex;
+  width: max-content;     /* コンテンツ幅に合わせる */
+  animation: scroll 20s linear infinite;
+}
+
+/* 各スライド */
+.slide {
+  flex: 0 0 100vw;        /* 各スライドは画面幅に合わせる */
+  height: 370px;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 画像をスライドにフィット */
+}
+
+/* アニメーション */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* 1枚分流れる */
+  }
+}
+
+
+.haikei-item {
+  position: relative;
+  display: inline-block; /* 横に並べたいなら */
+  margin-top: 20px;
+  
+}
+
+.haikei-item img {
+  display: block;
+}
+
+.shindan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 中央に配置 */
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black; /* 読みやすく */
+  pointer-events: none; /* クリックが画像に届くように */
+}
+.haikei{
+  z-index:0;
+  margin-left: 25px;
+
+}
+.all{
+  height:800px ;
+  background-color: beige;
+}
+
+footer {
+  color: white;
+  height: 50px;
+  background-color: #000;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 100px;
 }

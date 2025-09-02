@@ -1,0 +1,77 @@
+h6{
+    text-align: center;
+    
+}
+h7{font-size: 30px;
+}
+h8{margin-top: 20px;
+
+}
+.mypage{
+    text-align: center;
+    width: 1000px;
+    margin-left: 150px;
+    z-index: 1;
+    
+  
+    
+}
+
+.allmypage{
+    background-image: url(sea1.jpg);
+}
+.box15 {
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    margin-right:0px;
+    margin-top: 50px;
+}
+.box15 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box17{
+    
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    background-color: beige;
+}
+.box17:before, .box17:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.box17:before {left: 10px;}
+.box17:after {right: 10px;}
+.box17 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box21{
+    
+
+    padding: 0.5em 1em;
+    background: -moz-linear-gradient(#ffb03c, #ff708d);
+    background: -webkit-linear-gradient(#ffb03c, #ff708d);
+    background: linear-gradient(to right, #ffb03c, #ff708d);
+    color: #FFF;
+}
+.box21 p {
+    margin: 0; 
+    padding: 0;
+}
+

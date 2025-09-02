@@ -1,10 +1,11 @@
 h5{
     font-size: 32px;
     color: rgb(242, 131, 183);
+    margin-right: 40px;
 }
 .col-12 p{
     font-size:25px;
-    color: #2e31c4;
+    color: #FDFD96;
 }
 .container-sindan{
  text-align: center;
@@ -13,19 +14,80 @@ h5{
     align-items: center;    /* 横方向中央 */
     justify-content: center; /* 縦方向中央 */
     min-height: 100vh;      /* 画面全体の高さ確保 */
-    margin-left: 100px;
+    margin-left: 140px;
+    background-color: beige;
+    width:1000px;
+     border: 5px solid #FFEE8C;
+     border-radius: 30px;
+     margin-top: 40px;
+      font-family: "cursive";
 }
 .intoro1{
     background-color: rgb(239, 239, 14);
+    background-image: url(perfume.jpg);
+    
 
 
 }
 .col-11{
-    background-color: rgb(23, 174, 201);
-    border-radius: 80px;
-    width: 700px;
-    
+    background-color:rgb(243, 153, 224);
+    border-radius: 120px;
+    width: 900px;
+    height: 100px;
+    margin-bottom: 60px;
+    margin-left: 30px;
 }
 
 h6{ font-size: 20px;
-color:rgb(121, 171, 236)}
+}
+
+.button021{
+    font-size: 100px;
+}
+
+.intoro{
+    text-align: center;
+}
+
+.intro1{
+    text-align: center;
+    background-image: url(perfume.jpg);
+    width:800px;
+}
+
+h5{
+    text-align: center;
+}
+
+.outcome{
+    text-align: center;
+    color:antiquewhite
+}
+
+.exp{
+    background-color: beige;
+    border: 5px solid #FFEE8C;
+     border-radius: 30px;
+     width:1000px;
+     margin-left: 140px;
+    
+   
+
+
+}
+
+h9{
+    
+    text-align: center;
+    font-size: 30px;
+margin-bottom: 20px;
+}
+.hozon{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.left-image{
+ padding:300px;   
+}

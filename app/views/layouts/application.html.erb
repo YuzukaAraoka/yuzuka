@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Yuzuka</title>
+    <title>フィリピン日和　</title> <title>welcome to smile islands</title>
+     <h2 class="emphasis_design23">
+ 
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
- <main>
-  <%= yield %>
- </main>
-</body>
-  
+    <header>
+     <div class="header-list2">
+      <h1>フィリピン日和</h1><h11> welcome to smile islands</h11>
+      
+      <div class="header-list">
+        <ul>
+          <li><%= link_to "ホーム", tweets_path %></li>
+           <% if user_signed_in? %>
+           
+            <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+           
+            <% else %>
+            <%= link_to "新規登録", new_user_registration_path %>
+            <%= link_to "ログイン", new_user_session_path %>
+          <% end %>
+        </ul>
+      </div>
+       </div>
+      <div class="header-list3">
+        <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+        <%= link_to "投稿する",tweets_new_path,class: "link"  %>
+         <% if user_signed_in? %>
+          <%= link_to "マイページへ", user_path(current_user.id) %>
+        <% end %>
+      </div>
+    </header>
+    <main>
+
+   
+
+   
+      <%= yield %>
+    
+    </main>
+
+   
+
+  </body>
 </html>

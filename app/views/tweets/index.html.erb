@@ -1,31 +1,40 @@
-  <h1>フィリピン日和</h1>
-  /<h2 class="emphasis_design23">
-  <span>S</span>
-  <span>E</span>
-  <span>O</span>
-  <span>対</span>
-  <span>策</span>のバイブル
-</h2>
-
-    <% if user_signed_in? %>
-     <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
-    <% else %>
-     <%= link_to "新規登録", new_user_registration_path %>
-     <%= link_to "ログイン", new_user_session_path %>
-    <% end %>
-
-  <%= link_to "新規投稿へ", new_tweet_path %> <%= link_to "診断を始める", new_perfume_path, class: "link" %>
-
-  <div class="button_solid011">
-  <a href="#">
-    <span>おすすめスポットを見つけよう！</span>
-    診断を始める
-  </a>
+  
+<div class="all">
+     <div class="slider">
+  <div class="slider-track">
+    <div class="slide"> <%= image_tag("bigan.jpg") %> </div>
+    <div class="slide">  <%= image_tag("tasya.jpg") %></div>
+    <div class="slide"><%= image_tag("batangas.jpg") %></div>
+    <div class="slide">  <%= image_tag("sea1.jpg") %></div>
+    <div class="slide"><%= image_tag("mypage.jpg") %></div>
+   <div class="slide">  <%= image_tag("beach.jpg") %></div>
+  </div>
+  
 </div>
 
-  <% if user_signed_in? %>
-  <%= link_to "マイページへ", user_path(current_user.id) %>
-<% end %>
+ <div class="haikei">
+  <div class="haikei-item">
+    <%= link_to new_perfume_path do %>
+      <%= image_tag("shindan.jpeg", size: "400x300") %>
+      <div class="shindan">診断を始める</div>
+    <% end %>
+  </div>
 
+  <div class="haikei-item">
+    <%= link_to new_tweet_path do %>
+      <%= image_tag("halohalo.jpg", size: "400x300") %>
+      <div class="shindan">投稿する</div>
+    <% end %>
+  </div>
 
+  <div class="haikei-item">
+    <%= link_to new_tweet_path do %>
+      <%= image_tag("mypage.jpg", size: "400x300") %>
+      <div class="shindan">マイページへ</div>
+    <% end %>
+  </div>
 
+  <footer>
+      <p>Copyright © フィリピン日和 All Rights Reserved.</p>
+    </footer>
+</div>
